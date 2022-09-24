@@ -1,11 +1,14 @@
 import 'package:get/get.dart';
+import 'package:tour_application/ui/views/auth/sign_up.dart';
 import 'package:tour_application/ui/views/onbording_screen.dart';
 import 'package:tour_application/ui/views/splash_screen.dart';
 
 const String splash = '/splash-screen';
 const String onbording = '/onbording-screen';
+const String signUP = '/sign-up-screen';
 
 List<GetPage> getPages = [
   GetPage(name: splash, page: () => SplashScreen()),
   GetPage(name: onbording, page: () => OnbordingScreen()),
+  GetPage(name: signUP, page: () => SignUp()),
 ];
