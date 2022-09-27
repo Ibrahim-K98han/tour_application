@@ -6,10 +6,19 @@ import 'package:tour_application/ui/views/onbording_screen.dart';
 
 import '../styles/styles.dart';
 
-class SplashScreen extends StatelessWidget {
+class SplashScreen extends StatefulWidget {
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+    Future.delayed(Duration(seconds: 2), () => Get.to(OnbordingScreen()));
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
-    Future.delayed(Duration(seconds: 2), () => Get.to(OnbordingScreen()));
     return SafeArea(
       child: Scaffold(
         body: Container(

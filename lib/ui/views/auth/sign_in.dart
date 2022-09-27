@@ -4,12 +4,11 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:tour_application/const/app_colors.dart';
 import 'package:tour_application/ui/styles/styles.dart';
-import 'package:tour_application/ui/views/auth/sign_in.dart';
-import 'package:tour_application/ui/views/user_form.dart';
+import 'package:tour_application/ui/views/auth/sign_up.dart';
 
 import '../../widgets/violateBtn.dart';
 
-class SignUp extends StatelessWidget {
+class SignIn extends StatelessWidget {
 TextEditingController _emailController = TextEditingController();
 TextEditingController _passwordController = TextEditingController();
   @override
@@ -24,21 +23,11 @@ TextEditingController _passwordController = TextEditingController();
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Create\n Your Account',
+                  'Login\nTo Your Account',
                   style: TextStyle(
                       fontSize: 36.sp,
                       fontWeight: FontWeight.w500,
                       color: AppColors.violetColor),
-                ),
-                SizedBox(
-                  height: 12.h,
-                ),
-                Text(
-                  'Create your account and start your journey',
-                  style: TextStyle(
-                    fontSize: 16.sp,
-                    fontWeight: FontWeight.w300,
-                  ),
                 ),
                 SizedBox(
                   height: 80.h,
@@ -55,9 +44,7 @@ TextEditingController _passwordController = TextEditingController();
                   decoration: AppStyles().textFieldDecoration('Enter Password')
                 ),
                 SizedBox(height: 100.h,),
-                ViolatBtn('Create Account',()=>Auth().registration(
-
-                ),),
+                ViolatBtn('Login',(){}),
                 SizedBox(height: 10.h,),
                 Align(
                   alignment: Alignment.center,
@@ -87,7 +74,7 @@ TextEditingController _passwordController = TextEditingController();
                 Align(
                   alignment: Alignment.center,
                   child: RichText(text: TextSpan(
-                    text: 'Already an user?  ',
+                    text: "Don't have register yet?  ",
                     style: TextStyle(
                       fontSize: 18.sp,
                       fontWeight: FontWeight.w300,
@@ -95,13 +82,13 @@ TextEditingController _passwordController = TextEditingController();
                     ),
                     children: [
                       TextSpan(
-                        text: 'Login',
+                        text: 'Sign Up',
                         style: TextStyle(
                             fontSize: 18.sp,
                             fontWeight: FontWeight.w600,
                           color: AppColors.violetColor,
                         ),
-                        recognizer: TapGestureRecognizer()..onTap=()=> Get.to(SignIn()),
+                        recognizer: TapGestureRecognizer()..onTap=()=> Get.to(SignUp()),
                       ),
                     ],
                   )),

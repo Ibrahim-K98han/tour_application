@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1062834480949",
+    "project_id": "shelter-6fef8",
+    "storage_bucket": "shelter-6fef8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062834480949:android:33b63231d6c9eb444c0e7c",
+        "android_client_info": {
+          "package_name": "com.example.tour_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062834480949-na364qo6s44thg7cnvndi8i1dk8e2uah.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3chNsZlzEga5AlOZM-6j5ZOYB-IuY2qQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062834480949-na364qo6s44thg7cnvndi8i1dk8e2uah.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

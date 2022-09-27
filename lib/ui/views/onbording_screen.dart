@@ -76,7 +76,7 @@ class OnbordingScreen extends StatelessWidget {
                              ),),
                               InkWell(
                                 onTap: () {
-                                  if(_currentIndex == 2){
+                                  if(_currentIndex == _title.length - 1){
                                    Get.to(SignUp());
                                   }else{
                                     _currentIndex++;
